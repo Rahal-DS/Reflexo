@@ -1,12 +1,10 @@
 # Reflexo App for iOS
-Github Repo : https://github.com/rmit-iPSE-s2-2025/a2-s3985796-s4109704.git
 
-Miro Board : https://miro.com/app/board/uXjVJ7cZwUc=/?share_link_id=959699208659
+Designed and developed by:
 
-| Name  | Student ID |
-| ------------- |:-------------:|
-| Rahal De Silva      | S3985796     |
-| Asmiya Hasan      | S4109704     |
+Rahal De Silva 
+
+Asmiya Hasan
 
 ## References
 
