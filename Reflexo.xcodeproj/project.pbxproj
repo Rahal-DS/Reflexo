@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10FFEAE32E993E5200E79CCE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 10FFEAE22E993E5200E79CCE /* FirebaseAuth */; };
+		10FFEAE52E993E5200E79CCE /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 10FFEAE42E993E5200E79CCE /* FirebaseCore */; };
+		10FFEAE72E993E5200E79CCE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 10FFEAE62E993E5200E79CCE /* FirebaseFirestore */; };
+		BDAC92FC2E9CE5DB006C2DFE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAC92FB2E9CE5DB006C2DFE /* WidgetKit.framework */; };
+		BDAC92FE2E9CE5DB006C2DFE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAC92FD2E9CE5DB006C2DFE /* SwiftUI.framework */; };
+		BDAC93092E9CE5DD006C2DFE /* ReflexoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BDAC92F92E9CE5DB006C2DFE /* ReflexoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1016490F2E9BB1E100E87152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD278DD42E61F2340011BCBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD278DDB2E61F2340011BCBE;
+			remoteInfo = Reflexo;
+		};
+		BDAC93072E9CE5DD006C2DFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD278DD42E61F2340011BCBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAC92F82E9CE5DB006C2DFE;
+			remoteInfo = ReflexoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDAC930E2E9CE5DD006C2DFE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BDAC93092E9CE5DD006C2DFE /* ReflexoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1016490B2E9BB1E100E87152 /* ReflexoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReflexoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD278DDC2E61F2340011BCBE /* Reflexo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reflexo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAC92F92E9CE5DB006C2DFE /* ReflexoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReflexoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAC92FB2E9CE5DB006C2DFE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BDAC92FD2E9CE5DB006C2DFE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BDAC93132E9CE5E6006C2DFE /* ReflexoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReflexoWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BDAC930A2E9CE5DD006C2DFE /* Exceptions for "ReflexoWidget" folder in "ReflexoWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BDAC92F82E9CE5DB006C2DFE /* ReflexoWidgetExtension */;
+		};
+		BDAC93152E9CE729006C2DFE /* Exceptions for "Reflexo" folder in "ReflexoWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Model/GameRecord.swift,
+			);
+			target = BDAC92F82E9CE5DB006C2DFE /* ReflexoWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1016490C2E9BB1E100E87152 /* ReflexoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ReflexoTests;
+			sourceTree = "<group>";
+		};
+		BD278DDE2E61F2340011BCBE /* Reflexo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BDAC93152E9CE729006C2DFE /* Exceptions for "Reflexo" folder in "ReflexoWidgetExtension" target */,
+			);
+			path = Reflexo;
+			sourceTree = "<group>";
+		};
+		BDAC92FF2E9CE5DB006C2DFE /* ReflexoWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BDAC930A2E9CE5DD006C2DFE /* Exceptions for "ReflexoWidget" folder in "ReflexoWidgetExtension" target */,
+			);
+			path = ReflexoWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101649082E9BB1E100E87152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD278DD92E61F2340011BCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FFEAE52E993E5200E79CCE /* FirebaseCore in Frameworks */,
+				10FFEAE32E993E5200E79CCE /* FirebaseAuth in Frameworks */,
+				10FFEAE72E993E5200E79CCE /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC92F62E9CE5DB006C2DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAC92FE2E9CE5DB006C2DFE /* SwiftUI.framework in Frameworks */,
+				BDAC92FC2E9CE5DB006C2DFE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD278DD32E61F2340011BCBE = {
+			isa = PBXGroup;
+			children = (
+				BDAC93132E9CE5E6006C2DFE /* ReflexoWidgetExtension.entitlements */,
+				BD278DDE2E61F2340011BCBE /* Reflexo */,
+				1016490C2E9BB1E100E87152 /* ReflexoTests */,
+				BDAC92FF2E9CE5DB006C2DFE /* ReflexoWidget */,
+				BDAC92FA2E9CE5DB006C2DFE /* Frameworks */,
+				BD278DDD2E61F2340011BCBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD278DDD2E61F2340011BCBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD278DDC2E61F2340011BCBE /* Reflexo.app */,
+				1016490B2E9BB1E100E87152 /* ReflexoTests.xctest */,
+				BDAC92F92E9CE5DB006C2DFE /* ReflexoWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAC92FA2E9CE5DB006C2DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC92FB2E9CE5DB006C2DFE /* WidgetKit.framework */,
+				BDAC92FD2E9CE5DB006C2DFE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1016490A2E9BB1E100E87152 /* ReflexoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101649112E9BB1E100E87152 /* Build configuration list for PBXNativeTarget "ReflexoTests" */;
+			buildPhases = (
+				101649072E9BB1E100E87152 /* Sources */,
+				101649082E9BB1E100E87152 /* Frameworks */,
+				101649092E9BB1E100E87152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				101649102E9BB1E100E87152 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1016490C2E9BB1E100E87152 /* ReflexoTests */,
+			);
+			name = ReflexoTests;
+			packageProductDependencies = (
+			);
+			productName = ReflexoTests;
+			productReference = 1016490B2E9BB1E100E87152 /* ReflexoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD278DDB2E61F2340011BCBE /* Reflexo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD278DE72E61F2360011BCBE /* Build configuration list for PBXNativeTarget "Reflexo" */;
+			buildPhases = (
+				BD278DD82E61F2340011BCBE /* Sources */,
+				BD278DD92E61F2340011BCBE /* Frameworks */,
+				BD278DDA2E61F2340011BCBE /* Resources */,
+				BDAC930E2E9CE5DD006C2DFE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAC93082E9CE5DD006C2DFE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD278DDE2E61F2340011BCBE /* Reflexo */,
+			);
+			name = Reflexo;
+			packageProductDependencies = (
+				10FFEAE22E993E5200E79CCE /* FirebaseAuth */,
+				10FFEAE42E993E5200E79CCE /* FirebaseCore */,
+				10FFEAE62E993E5200E79CCE /* FirebaseFirestore */,
+			);
+			productName = Reflexo;
+			productReference = BD278DDC2E61F2340011BCBE /* Reflexo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDAC92F82E9CE5DB006C2DFE /* ReflexoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAC930B2E9CE5DD006C2DFE /* Build configuration list for PBXNativeTarget "ReflexoWidgetExtension" */;
+			buildPhases = (
+				BDAC92F52E9CE5DB006C2DFE /* Sources */,
+				BDAC92F62E9CE5DB006C2DFE /* Frameworks */,
+				BDAC92F72E9CE5DB006C2DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BDAC92FF2E9CE5DB006C2DFE /* ReflexoWidget */,
+			);
+			name = ReflexoWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ReflexoWidgetExtension;
+			productReference = BDAC92F92E9CE5DB006C2DFE /* ReflexoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD278DD42E61F2340011BCBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					1016490A2E9BB1E100E87152 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = BD278DDB2E61F2340011BCBE;
+					};
+					BD278DDB2E61F2340011BCBE = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BDAC92F82E9CE5DB006C2DFE = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = BD278DD72E61F2340011BCBE /* Build configuration list for PBXProject "Reflexo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD278DD32E61F2340011BCBE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				10FFEAAE2E993B1000E79CCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BD278DDD2E61F2340011BCBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD278DDB2E61F2340011BCBE /* Reflexo */,
+				1016490A2E9BB1E100E87152 /* ReflexoTests */,
+				BDAC92F82E9CE5DB006C2DFE /* ReflexoWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		101649092E9BB1E100E87152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD278DDA2E61F2340011BCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC92F72E9CE5DB006C2DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101649072E9BB1E100E87152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD278DD82E61F2340011BCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAC92F52E9CE5DB006C2DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		101649102E9BB1E100E87152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD278DDB2E61F2340011BCBE /* Reflexo */;
+			targetProxy = 1016490F2E9BB1E100E87152 /* PBXContainerItemProxy */;
+		};
+		BDAC93082E9CE5DD006C2DFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAC92F82E9CE5DB006C2DFE /* ReflexoWidgetExtension */;
+			targetProxy = BDAC93072E9CE5DD006C2DFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		101649122E9BB1E100E87152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asmiyahasan.ReflexoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reflexo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reflexo";
+			};
+			name = Debug;
+		};
+		101649132E9BB1E100E87152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asmiyahasan.ReflexoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reflexo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reflexo";
+			};
+			name = Release;
+		};
+		BD278DE52E61F2360011BCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD278DE62E61F2360011BCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD278DE82E61F2360011BCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reflexo/Reflexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FU729C387;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahaldesilva.Reflexo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD278DE92E61F2360011BCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reflexo/Reflexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FU729C387;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahaldesilva.Reflexo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDAC930C2E9CE5DD006C2DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ReflexoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FU729C387;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReflexoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReflexoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahaldesilva.Reflexo.ReflexoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDAC930D2E9CE5DD006C2DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ReflexoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FU729C387;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReflexoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReflexoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahaldesilva.Reflexo.ReflexoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101649112E9BB1E100E87152 /* Build configuration list for PBXNativeTarget "ReflexoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101649122E9BB1E100E87152 /* Debug */,
+				101649132E9BB1E100E87152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD278DD72E61F2340011BCBE /* Build configuration list for PBXProject "Reflexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD278DE52E61F2360011BCBE /* Debug */,
+				BD278DE62E61F2360011BCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD278DE72E61F2360011BCBE /* Build configuration list for PBXNativeTarget "Reflexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD278DE82E61F2360011BCBE /* Debug */,
+				BD278DE92E61F2360011BCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAC930B2E9CE5DD006C2DFE /* Build configuration list for PBXNativeTarget "ReflexoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAC930C2E9CE5DD006C2DFE /* Debug */,
+				BDAC930D2E9CE5DD006C2DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10FFEAAE2E993B1000E79CCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10FFEAE22E993E5200E79CCE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FFEAAE2E993B1000E79CCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		10FFEAE42E993E5200E79CCE /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FFEAAE2E993B1000E79CCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		10FFEAE62E993E5200E79CCE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FFEAAE2E993B1000E79CCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD278DD42E61F2340011BCBE /* Project object */;
+}
