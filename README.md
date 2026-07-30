@@ -93,10 +93,6 @@ Reflexo/
 4. Set your development team and a unique bundle identifier for both the app and widget targets, and configure the shared app group (`group.com.ReflexoShared`) used by the widget.
 5. Build and run.
 
-## Security note
-
-The committed `Config.plist` and `GoogleService-Info.plist` contain credentials that should not be shared publicly. Before making this repository public, rotate the exposed keys, remove these files from version control, and add them to `.gitignore`.
-
 ## References
 
 - Apple Inc. (2024). *SwiftUI Documentation.* Apple Developer. https://developer.apple.com/documentation/swiftui/
